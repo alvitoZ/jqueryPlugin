@@ -12,13 +12,13 @@
         display: inline-block;
         transition: 0.2s;
       } */
-      .coba:hover {
+      /* .coba:hover {
         transform: scale(1.2);
         color: red;
         letter-spacing: 30px;
         display: inline-block;
         transition: 0.2s;
-      }
+      } */
       h1 {
         letter-spacing: 10px;
       }
@@ -37,17 +37,27 @@
     <div class="coba3">ssafsasasasa</div>
 
     <script src="./jquery.js"></script>
-    <script src="./plugin.js"></script>
+    <!-- <script src="./plugin.js"></script> -->
+    <script src="./plugin2.js"></script>
     <script>
       //   $("h1").css("color", "red");
       //   console.log("casasd");
       //   $("h1").on("click", function () {
       //     console.log($(this).text());
       //   });
-      //   $("h1").semanticTabs();
+      // $("h1").semanticTabs();
+
       $("h1").semanticTabs();
-      $("h2").semanticTabs();
-      $(".coba3").semanticTabs();
+
+      function kaliAjaBisa() {
+        $("h1").semanticTabs({
+          color: "green",
+        }),
+          $("h1").semanticTabs2({
+            color: "blue",
+          });
+      }
+      // kaliAjaBisa();
     </script>
   </body>
 </html>

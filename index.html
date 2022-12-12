@@ -29,6 +29,7 @@
     <div class="versi2">
       <h2>ini h2</h2>
       <h1>h1 keknya</h1>
+      <h3>ini h3 coy</h3>
     </div>
 
     <!-- <div>
@@ -45,19 +46,43 @@
       //   $("h1").on("click", function () {
       //     console.log($(this).text());
       //   });
-      // $("h1").semanticTabs();
 
-      $("h1").semanticTabs();
+      // $("h1").semanticTabs3({
+      //   index: {
+      //     index: 5,
+      //     color: "red",
+      //   },
+      // });
+
+      // $("h1").semanticTabs({
+      //   index: {
+      //     index: 5,
+      //     color: "red",
+      //   },
+      // });
+
+      // $("h1").semanticTabs3();
+      // $("h3").semanticTabs3();
 
       function kaliAjaBisa() {
         $("h1").semanticTabs({
           color: "green",
+          index: {
+            index: [5, 6, 7],
+            color: "yellow",
+          },
         }),
           $("h1").semanticTabs2({
             color: "blue",
+            index: {
+              index: [5, 6, 7],
+              color: "orange",
+            },
           });
       }
-      // kaliAjaBisa();
+
+      // console.log(y[4]);
+      kaliAjaBisa();
     </script>
   </body>
 </html>
